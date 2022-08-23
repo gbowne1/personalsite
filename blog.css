@@ -1,0 +1,244 @@
+ /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  body {
+    background-color: #222;
+    font-family: arial, helvetica, sans-serif;
+    
+  }
+  @font-face {
+    font-family: 'Genericons';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.woff') format('woff'),
+      url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot') format('truetype');
+  }
+  
+  container {
+    margin: 50px auto;
+    width: 90%;
+  }
+  
+  header h1 {
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .accordion {
+    background: #333;
+    width: 100%;
+    min-width: 800px;
+    display: block;
+    list-style-type: none;
+    overflow: hidden;
+    height: 200px;
+    font-size: 0;
+  }
+  
+  .tab {
+    display: inline-block;
+    background-color: #444;
+    border-right: #333 solid 1px;
+    width: 80px;
+    height: 200px;
+    overflow: hidden;
+    position: relative; 
+    margin: 0;
+    transition: all 0.5s ease-in-out 0.1s;
+  }
+  
+  .tab:hover {
+    width: 450px;
+  }
+  
+  .tab:hover .social a:before {
+    margin-left: -100px;
+  }
+  
+  .tab:hover .social a:after {
+    margin-left: -5px;
+  }
+  .tab .content {
+    background-color: #fff;;
+    width:  360px;
+    height: 200px;
+    margin-left: 80px;
+    position: relative;
+    padding: 50px 0 0 15px;
+  }
+  
+  .tab .content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .tab .content p {
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+    padding-right: 30px;
+  }
+  .social a:before,
+  .social a:after {
+    transition: all 0.4s ease-in-out 0.1s;
+    width: 80px;
+    height: 200px;
+    position: absolute;
+    text-indent: 0;
+    padding-top: 90px;
+    padding-left: 25px ;
+    display: block;
+    font: normal 30px Genericons;
+    color: #fff;
+  }
+  
+  .social a:after{
+    font-size: 48px;
+    padding-left: 20px;
+    padding-top: 80px;
+    margin-left: 85px;
+  }
+  /* Add Icons */
+  /* Social media links: youtube  */
+  .youtube a:before,
+  .youtube a:after {
+    content: '\f213';
+  }
+  
+  .youtube a:after {
+    background-color: #f00;
+  }
+  /* Social media links: instagram  */
+  .instagram a:before,
+  .instagram a:after {
+    content: '\f215';
+  }
+  
+  .instagram a:after {
+    background-color: #6dc993;
+  }
+  /* Social media links: facebook  */
+  .facebook a:before,
+  .facebook a:after {
+    content: '\f204';
+  }
+  
+  .facebook a:after {
+    background-color: #3b5998;
+  }
+  /* Social media links: codepen  */
+  .codepen a:before,
+  .codepen a:after {
+    content: '\f100';
+  }
+  
+  .codepen a:after {
+    background-color: #00AEEF;
+  }
+  /* Social media links: linkedin  */
+  .linkedin a:before,
+  .linkedin a:after {
+    content: '\f207';
+  }
+  
+  .linkedin a:after {
+    background-color: #00AEEF;
+  }
+  /* responsive settings */
+  @media(max-width: 950px) {
+    .container {
+      width: 70%;
+    }
+    
+    .tab {
+      display:block;
+      width:100%;
+      border-bottom: 3px #333 solid;
+    }
+    
+    .acordion {
+      display: block;
+      min-width: 450px;
+      height: auto;
+    }
+    
+    .tab .content{
+      width: 85%;
+    }
+    
+    .tab:hover {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 680px) {
+    .container {
+      width: 95%;
+    }
+   
+    .acordion {
+      width: 100%;
+      min-width: 350px;
+      
+    }
+    
+  }

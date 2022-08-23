@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gregory Bowne</title>
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta name="description" content="My Personal Website">
+  <meta name="keywords" content="Gregory Bowne">
+  <meta name="robots" content="index, follow, noodp" />
+  <meta name="googlebot" content="index,follow">
+  <meta name="google-site-verification" content="verification_token">
+  <meta name="revised" content="8/3/2021" />
+  <meta name="author" content="Gregory Bowne" />
+  <meta http-equiv="cookie" content="userid = xyz; expires = Wednesday, 08-Aug-15 23:59:59 GMT;" />
+  <meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+  <meta http-equiv="expires" content="43200" />
+  <meta name="google" content="nositelinkssearchbox">
+  <meta name="google" content="notranslate">
+  <link rel="amphtml" href="https://example.com/path/to/amp-version.html">
+  <link rel="alternate" href="https://en.example.com/" hreflang="en">
+  <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
+  <link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
+  <link rel="icon" href="favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="icon" href="favicon-62.png" sizes="62x62" type="image/png">
+  <link rel="icon" href="favicon-192.png" sizes="192x192" type="image/png">
+  <link rel="dns-prefetch" href="//example.com/">
+  <link rel="preconnect" href="https://www.example.com/">
+  <link rel="prefetch" href="https://www.example.com/">
+  <link rel="prerender" href="https://example.com/">
+  <link rel="subresource" href="styles.css">
+  <link rel="preload" href="image.png">
+  <link rel="canonical" href=".html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"
+    integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-full fixed-top navbar-inverse navbar-dark navbar-expand-sm bg-dark" role="navigation"
+    style="background: #4169e1;">
+    <div class="container container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+          aria-expanded="false">
+          <span class="sr-only">(current)</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Greg Bowne</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav nav-item active navbar-nav mr-auto">
+          <span class="sr-only">(current)</span>
+          <li class="nav-item"> <a class="navbar-link" href="/index.html">Home</a></li>
+          <li class="nav-item"> <a class="navbar-link" href="/about.html">About</a></li>
+          <li class="nav-item"> <a class="navbar-link" href="/gallery.html">Gallery</a></li>
+          <li class="active"> <a class="navbar-link" href="/blog.html">Blog</a></li>
+          <li class="nav-item"> <a class="navbar-link" href="/contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" collapse="!isCollapsed">
+          <li><a href="/login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0 pull-xs-right" style="padding: .75rem; float:right">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div class="jumbotron" style="height: 300px; background: blue;">
+  <div class="container text-center" style="background: aqua;">  //*This thing needs a size!*//
+    <h1>Greg Bowne</h1>      
+  </div>
+</div> -->
+
+  <div class="row">
+    <div class="card-columns">
+      <div class="col-lg-3">
+        <div class="card w-75" style="width: 75%; border-radius: 2%;">
+          <img class="card-img-top" src="img.png" alt="Card image">
+          <div class="card-header">Header</div>
+          <div class="card-body text-left">
+            <h3 class="card-title text-left">Radio Logger</h3>
+            <h5 class="card-subtitle mb-2 text-muted"></h5>
+            <small class="text-muted">Last updated 3 mins ago</small>
+            <time datetime="2021-10-12">October 12th, 2021 </time>
+            <!-- This needs help // really should write a blog tool // This div really needs to be in a Bootstrap "Card "-->
+            <!-- this card has badly radiused corners -->
+            <p>I am starting to build a radio hobby logging program mostly for SWL's but can be used for Amateur radio
+              and
+              other modes. This project will be hosted on Heroku</p>
+            <p>I started building this project with PostgreSQL (database ), ExpressJS (Middleware/Server/Router), REACT
+              (Front End), NodeJS (Server)</p>
+            <p>I have this project hosted on Github.</p>
+            <p></p><i class="fab fa-github"></i> <a href="https://www.github.com/gbowne1/radio-logger/"></a>
+            <p class="card-text">Some example text. Some example text.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+            <div class="card-footer">Footer</div>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1">
+      <div class="card" style="border-radius: 2%;">
+        <h2>My current projects</h2>
+        <time datetime="2021-10-14" style="font-size: 19.2px;">October 14th, 2021</time>
+        <p>I have been working on many different projects over the past decade or more. I </p>
+      </div>
+      <div class="col-sm-1">
+        <div class="card" style="border-radius: 2%">
+          <h2>My computer</h2>
+          <time datetime="2021-10-14" style="font-size: 19.2px;">October 14th, 2021</time>
+          <p>I have been working on many different projects over the past decade or more. I </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-3">
+    <div class="col-sm-1">
+      <div class="card">
+        <h3>Popular Post</h3>
+        <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div>
+      </div>
+      <div class="card">
+        <div class="container">
+          <header>
+            <h1>Follow Me On Social Media</h1>
+          </header>
+          <ul class="accordion">
+            <li class="tab">
+              <div class="social youtube">
+                <a href="" target="_blank">Youtube</a>
+              </div>
+              <div class="content">
+                <h1>Youtube</h1>
+                <p>Follow me on YouTube</p>
+              </div>
+            </li>
+            <li class="tab">
+              <div class="social instagram">
+                <a href="https://www.instagram.com/gbowne1/" target="_blank">Instagram</a>
+              </div>
+              <div class="content">
+                <h1>Instagram</h1>
+                <p>Follow me on Instagram</p>
+              </div>
+            </li>
+            <li class="tab">
+              <div class="social linkedin">
+                <a href="https://www.linkedin.com/in/gbowne1/" target="_blank">LinkedIn</a>
+              </div>
+              <div class="content">
+                <h1>LinkedIn</h1>
+                <p>Follow me on Linkedin</p>
+              </div>
+            </li>
+            <li class="tab">
+              <div class="social facebook">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+              </div>
+              <div class="content">
+                <h1>Facebook</h1>
+                <p>Follow me on Facebook</p>
+              </div>
+            </li>
+            <li class="tab">
+              <div class="social codepen">
+                <a href="https://codepen.io//" target="_blank">Codepen</a>
+              </div>
+              <div class="content">
+                <h1>Codepen</h1>
+                <p>Follow me on Codepen</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <!-- Labels / tags -->
+      <div class="card">
+        <div class="container">
+          <h4>Tags</h4>
+        </div>
+        <div class="container">
+
+        </div>
+      </div>
+
+      <footer class="container-fluid text-center page-footer font-small blue pt-4">
+
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+              <!-- Content -->
+              <h5 class="text-uppercase">Footer Content</h5>
+              <p>Here you can use rows and columns to organize your footer content.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              <!-- Links -->
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              <!-- Social Links -->
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <script src="slideShow.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/fontawesome.min.js"
+        integrity="sha512-ywaT8M9b+VnJ+jNG14UgRaKg+gf8yVBisU2ce+YJrlWwZa9BaZAE5GK5Yd7CBcP6UXoAnziRQl40/u/qwVZi4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.1/umd/popper.min.js"
+        integrity="sha512-8jeQKzUKh/0pqnK24AfqZYxlQ8JdQjl9gGONwGwKbJiEaAPkD3eoIjz3IuX4IrP+dnxkchGUeWdXLazLHin+UQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.1/cjs/popper.min.js"
+        integrity="sha512-BftZ66iq9R6C4YP4NOUxqr9FRthQQ2pvktR1W6Wi0qRqZkSWyMFBKRAykQJyGHVQ3ChBXYhDVbW9Bf4Jxv08iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.1/esm/popper.min.js"
+        integrity="sha512-aSCUnIf5arudGto225/QqbEgN6cN22eXky/XUnXgkxsuLfdxzr/zirkr25psrCK24Q8UItMSwAhxTQpTHO24hQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+      </script>
+    </div>
+  </div>
+</body>
+</html>

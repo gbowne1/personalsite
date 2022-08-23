@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  transition: background-color 0.6s ease, color 1s ease;
+}
+
+.header {
+  background-color: #2c3e50;
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  background: gray;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  user-select: none;
+  border: 1px transparent;
+  padding: .375rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem
+}
+
+div.figure {
+  float: right;
+  width: 30%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+img.scaled {
+  width: 100%;
+}
+
+.img.scaled {
+  width: 100%;
+}
+
+search {
+	position: relative;
+	margin-top: 10px;
+	width: 0%;
+	min-width: 60px;
+	height: 60px;
+	float: right;
+	overflow: hidden;
+
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+
+	-webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.search input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	outline: none;
+	background: #fff;
+	width: 100%;
+	height: 60px;
+	margin: 0;
+	z-index: 10;
+	padding: 20px 65px 20px 20px;
+	font-family: inherit;
+	font-size: 20px;
+	color: #2c3e50;
+}
+
+input[type="search"].sb-search-input {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+}
+
+.section {
+  display: block;
+}
+
+.jumbotron {
+  height: 900px;
+  background-image: url("/seattle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: .05%;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+
+.figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
+.avatar {
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+  -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  .jumbotron{
+    background-position: 100% 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;} 
+}
+/*Cookie Consent Begin*/
+#cookieConsent {
+  background-color: rgba(20,20,20,0.8);
+  min-height: 26px;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 26px;
+  padding: 8px 0 8px 30px;
+  font-family: "Trebuchet MS",Helvetica,sans-serif;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 9999;
+}
+#cookieConsent a {
+  color: #4B8EE7;
+  text-decoration: none;
+}
+#closeCookieConsent {
+  
+  display: inline-block;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: -15px 0 0 0;
+  font-weight: bold;
+}
+#closeCookieConsent:hover {
+  color: #FFF;
+}
+#cookieConsent a.cookieConsentOK {
+  background-color: #F1D600;
+  color: #000;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0 20px;
+  cursor: pointer;
+  margin: 0 60px 0 10px;
+}
+#cookieConsent a.cookieConsentOK:hover {
+  background-color: #E0C91F;
+}
+/*Cookie Consent End*/
+
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: blue;
+  position: relative;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.wrapper {
+  min-height: calc(100vh - 50px);
+  height: auto !important;
+  /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -155px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+/* Add a gray background color and some padding to the footer */
+
+footer {
+  display: flex;
+  background: blue;
+  background-color: gray;
+  padding: 25px;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text], select, textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+
+.fa {
+  padding: 120px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Style Instagram FA */
+
+.fa-instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+
+.fa::before {
+  display: inline-block;
+  /* .fa-fw */
+  width: 1.28571429em;
+  text-align: center;
+}
+
+.fa::after {
+  content: attr(class);
+  font-family: consolas, monospace;
+  font-size: 15px;
+  /* .code */
+  padding: 2px 4px;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+ /* The switch - the box around the slider */
+ .switch {
+  padding-top: 4px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: gray;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px navy;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: transparent;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+@media (min-width:320px) {}
+@media (min-width:480px) {}
+@media (min-width:600px) {}
+@media (min-width:1025px){}
+@media (min-width:1281px){}
