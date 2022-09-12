@@ -14,7 +14,7 @@
   
 * Fix text label for search form (WCAG)
   
-* Fix Bootstrap 5 card border-radius in /blog.html
+* Fix Bootstrap 5 card border-radius in blog.html
 
 * Fix dark mode / light mode toggle switch  
   
@@ -45,13 +45,13 @@
 
 * Fix contrast issues (WCAG)
 
-* Work on styling /blog.html
+* Work on styling blog.html
 
-* Work on adding content from github.com/gbowne1/gbowne1/README.md to site in About me /about.html
+* Work on adding content from github.com/gbowne1/gbowne1/README.md to site in About me about.html
 
 * Make nightseattlepic.jpg a banner  
 
-* Create contact database for storing contacts from /contact.html
+* Create contact database for storing contacts from contact.html
 
 * Create RSS Feed(s)
 
